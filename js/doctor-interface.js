@@ -7,6 +7,7 @@ $(function() {
   $('#malady').submit(function(event) {
     event.preventDefault();
     malady = $('#malady-input').val();
-    getDoctors(malady)
+    specialty = $('#specialty').val();
+    getDoctors(malady, specialty);
   });
 });

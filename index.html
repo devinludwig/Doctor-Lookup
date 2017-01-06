@@ -11,15 +11,17 @@
   <body class="container">
     <h1 class="well">Welcome to Devin's Doctor Finder</h1>
     <h2>We will find you an awesome doc.</h2>
-    <form id="malady" class="form-group">
-      <div class="col-xs-6">
-        <input id="malady-input" class="form-control" placeholder="Enter your medical issue to get doctor suggestions..." autofocus required>
+    <form id="malady" class="form-group row">
+      <div class="col-xs-4">
+        <label for="malady-input">Health Issue:</label>
+        <input id="malady-input" class="form-control" placeholder="Enter your medical issue to get doctor suggestions..." autofocus>
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
+      <small class="col-xs-2 form-text">or choose a specialty:</small>
       <div class="col-xs-6">
+        <label for="specialty">Medical Specialty:</label>
         <select id="specialty" class="form-control">
         </select>
-        <small class="form-text">or choose a specialty!</small>
       </div>
     </form>
     <ol id="doctor-list">

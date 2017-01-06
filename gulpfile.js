@@ -71,7 +71,6 @@ gulp.task('serve', function() {
   });
   gulp.watch(['js/*.js'], ['jsBuild'])
   gulp.watch(['scss/*.scss'], ['cssBuild']);
-  gulp.watch(['*.html']);
   gulp.task('bowerBuild', ['bowerBuild']);
 });
 

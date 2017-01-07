@@ -3,7 +3,7 @@ var getSpecialties = require('./../js/doctor.js').getSpecialties;
 var apiKey = require('./../.env').apiKey;
 
 $(function() {
-  getSpecialties()
+  getSpecialties();
   $('#malady').submit(function(event) {
     event.preventDefault();
     malady = $('#malady-input').val();
